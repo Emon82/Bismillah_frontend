@@ -1,0 +1,32 @@
+export default interface profiledataInstance {
+  about: string;
+  annualIncome: number;
+  bodyType: string;
+  caste: string;
+  city: string;
+  collage: string;
+  community: string;
+  contactNumber: number;
+  dateOfBirth: string;
+  degree: string;
+  designation: string;
+  diet: string;
+  disability: string;
+  drink: string;
+  employerName: string;
+  firstName: string;
+  gender: string;
+  height: string;
+  lastName: string;
+  livingCountry: string;
+  materialStatus: string;
+  profession: string;
+  profileFor: string;
+  religion: string;
+  skinTone: string;
+  smoke: string;
+  states: string;
+  subCommunity: string;
+  weight: string;
+  workingWith: string;
+}

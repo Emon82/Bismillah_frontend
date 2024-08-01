@@ -1,0 +1,110 @@
+{
+  "name": "typescript-nextjs-starter",
+  "description": "A TypeScript starter for Next.js that includes all you need to build amazing projects",
+  "version": "1.0.0",
+  "private": true,
+  "author": "João Pedro Schmitz <oi@joaopedro.cc> (joaopedro.cc)",
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "starter",
+    "typescript"
+  ],
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p 3100",
+    "type-check": "tsc",
+    "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
+    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "./src/**/*.{ts,js,jsx,tsx}": [
+      "yarn lint --fix",
+      "yarn format"
+    ]
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "1.0.3",
+    "@chakra-ui/react": "1.1.5",
+    "@emotion/react": "11.1.4",
+    "@emotion/styled": "11.0.0",
+    "@firebase/auth-types": "0.10.3",
+    "@firebase/firestore-types": "2.3.0",
+    "@react-google-maps/api": "2.19.3",
+    "@stripe/react-stripe-js": "1.4.1",
+    "@stripe/stripe-js": "1.15.0",
+    "chakra-ui-autocomplete": "1.2.6",
+    "cuid": "2.1.8",
+    "firebase": "8.10.1",
+    "framer-motion": "3.2.1",
+    "localforage": "1.9.0",
+    "mobx": "6.0.4",
+    "mobx-react-lite": "3.1.6",
+    "mobx-state-tree": "5.0.0",
+    "next": "14.2.5",
+    "rc-slider": "9.7.1",
+    "react": "18.2.0",
+    "react-avatar-editor": "11.1.0",
+    "react-dom": "18.2.0",
+    "react-free-scrollbar": "0.3.4",
+    "react-hook-form": "6.14.2",
+    "react-icons": "4.1.0",
+    "react-image-crop": "8.6.6",
+    "react-image-gallery": "1.0.9",
+    "react-images-uploading": "3.1.2",
+    "react-paginate": "7.1.2",
+    "react-phone-input-2": "2.14.0",
+    "react-player": "2.9.0",
+    "react-responsive-carousel": "3.2.11",
+    "react-stripe-checkout": "2.6.3",
+    "react-tag-autocomplete": "6.1.0",
+    "react-tagsinput": "3.19.0",
+    "use-async-effect": "2.2.3",
+    "use-async-memo": "1.2.3",
+    "yarn": "1.22.22"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@types/node": "14.14.21",
+    "@types/react": "17.0.0",
+    "@types/react-avatar-editor": "10.3.5",
+    "@types/react-dom": "17.0.0",
+    "@types/react-image-crop": "8.1.2",
+    "@types/react-image-gallery": "1.0.2",
+    "@types/react-paginate": "6.2.1",
+    "@types/react-tag-autocomplete": "6.1.0",
+    "@types/react-tagsinput": "3.19.7",
+    "@typescript-eslint/eslint-plugin": "4.13.0",
+    "@typescript-eslint/parser": "4.13.0",
+    "commitizen": "4.3.0",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.18.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "7.1.0",
+    "eslint-import-resolver-typescript": "2.3.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "husky": "4.3.8",
+    "lint-staged": "10.5.3",
+    "mobx-devtools-mst": "0.9.30",
+    "prettier": "2.2.1",
+    "typescript": "5.5.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

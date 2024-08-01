@@ -1,0 +1,8 @@
+{
+  "models\\root-store-provider.tsx -> mobx-devtools-mst": {
+    "id": "models\\root-store-provider.tsx -> mobx-devtools-mst",
+    "files": [
+      "static/chunks/node_modules_mobx-devtools-mst_lib_index_js.js"
+    ]
+  }
+}

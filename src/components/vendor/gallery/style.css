@@ -1,0 +1,41 @@
+.box {
+    margin: 100px auto;
+    width: 300px;
+  }
+  input[type="file"] {
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+  }
+  label,
+  input[type="file"] {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
+    background: rgba(81,81,81,0.3);
+    text-align: center;
+  }
+  label {
+    position: relative;
+  }
+  
+  .lbl {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    width: 100px;
+    line-height: 1.5;
+    z-index: -1;
+  }
+  
+  button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  #fileName {
+    background: aquamarine;
+    padding: 10px;
+  }
