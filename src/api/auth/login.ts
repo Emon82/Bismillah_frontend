@@ -7,7 +7,9 @@ export const signIn = async (identity: string, password: string) => {
     const data = {
       identity,
       password,
+      // phone:'01655614454'
     };
+    console.log('url', signInUrl);
     const res = await publicFetch(signInUrl, data, undefined, 'POST');
     const json: LoginResType = await res.json();
     return json;

@@ -21,7 +21,10 @@ export const signUp = async (
         delete data[key];
       }
     });
-    // console.log(data)
+    // console.log(data)\
+    data.phone = '01683541037';
+    data.email = 'naimul@techknowgram.com';
+
     const res = await publicFetch(signUpUrl, data, undefined, 'POST');
     const json: RegisterResType = await res.json();
     return json;
