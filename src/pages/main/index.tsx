@@ -30,6 +30,8 @@ const Index = observer(() => {
     );
   }
 
+  
+
   return (
     <Box bg={csBackground}>
       {user && user.selectProfileId ? (

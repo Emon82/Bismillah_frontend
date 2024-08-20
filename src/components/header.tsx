@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import { signIn } from '@/api/auth/login';
@@ -357,7 +359,7 @@ export const Header = (props: any) => {
 
         setSignUp(false);
         setSignIn(false);
-        setIsVerify(true);
+        // setIsVerify(true);
         setName('');
         // setEmail('');
         setPassword('');
@@ -400,6 +402,9 @@ export const Header = (props: any) => {
     },
     [name, email, password, phone, confirmPassword, toast],
   );
+
+
+
 
   const vendorSignUpHandler = useCallback(
     async (event: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
@@ -1344,6 +1349,9 @@ export const Header = (props: any) => {
                           User Sign Up
                         </Button>
                       </Box>
+
+
+
                     </TabPanel>
                     <TabPanel>
                       <FormControl>

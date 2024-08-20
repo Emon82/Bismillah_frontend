@@ -8,7 +8,7 @@ export const baseUrl = `${protocol + host}/`;
 
 export const baseApiUrl = `${protocol + host}/api`; */
 
-export const baseApiUrl = 'http://localhost:3100/api';
+export const baseApiUrl = 'http://103.191.241.19:3100/api';
 
 export const signInUrl = `${baseApiUrl}/auth/login`;
 export const signUpUrl = `${baseApiUrl}/auth/register`;
